@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./styles/output.css">
+	<title>Contrução de Layout</title>
+</head>
+<body>
+
+	<div class="container bg-red-300 mx-auto p-4 my-4 text-red-700 border-red-600 border-2">
+		<p>O texto do container</p>
+	</div>
+
+	<div class="container bg-green-500 md:bg-blue-600 mx-auto p-4 my-4">
+		<p>Segundo container</p>
+	</div>
+
+	<div class="container bg-purple-600 border-2 border-purple-900 m-4 border-box p-10">
+		<p>Border box</p>
+	</div>
+
+	<div class="container bg-teal-500 border-2 border-teal-900 m-4 box-content p-10">
+		<p>Box content</p>
+	</div>
+
+	<div class="container">
+		<span class="block bg-red-500">Não são elementos de bloco</span>
+		<span class="block bg-pink-400">Não são elementos de bloco</span>
+		<div class="bg-orange-600 inline-block">Block</div>
+		<div class="bg-yellow-400 inline-block">Block</div>
+		<div class="hidden">Estou aparecendo</div>
+	</div>
+
+	<div class="container bg-yellow-800 m-6 p-6">
+		<div class="bg-amber-500 inline-block">oi</div>
+		<div class="bg-cyan-400 inline-block">oi</div>
+		<div class="bg-violet-700 inline-block">oi</div>
+	</div>
+
+	<div class="bg-pink-500 float-right">Float right</div>
+	<div class="bg-pink-500 float-left">Float left</div>
+	<div class="clearfix"></div>
+	<div class="bg-purple-500 float-right">Float right</div>
+	<div class="bg-purple-500 float-left">Float left</div>
+	<br/>
+
+	<div class="overflow-hidden h-16 m-6 bg-slate-500">
+		<p>Testando overflow HIDDEN</p>
+		<p>Testando overflow</p>
+		<p>Testando overflow</p>
+		<p>Testando overflow</p>
+		<p>Testando overflow</p>
+	</div>
+
+	<div class="overflow-auto h-16 m-6 bg-slate-500">
+		<p>Testando overflow AUTO</p>
+		<p>Testando overflow</p>
+		<p>Testando overflow</p>
+		<p>Testando overflow</p>
+		<p>Testando overflow</p>
+	</div>
+
+	<div class="overflow-x-auto h-16 m-6 bg-slate-500">
+		aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+	</div>
+
+	<div class="overflow-y-auto h-16 m-6 bg-slate-500">
+		<p>Testando overflow AUTO</p>
+		<p>Testando overflow</p>
+		<p>Testando overflow</p>
+		<p>Testando overflow</p>
+		<p>Testando overflow</p>
+	</div>
+
+	<!-- Positions -->
+	<div class="relative bg-pink-700">
+		relative
+		<div class="absolute top-0 right-0 bg-pink-300">
+			absolute
+		</div>
+	</div>
+
+	<div class="relative container h-10 m-10 bg-blue-400">
+		container
+		<div class="absolute bottom-0 right-0 bg-blue-800">div</div>
+	</div>
+
+	<div class="container bg-red-400 invisible m-10">
+		<p>estou oculto</p>
+	</div>
+
+	<div class="container relative">
+		<div class="bg-red-300 h-20 w-20 p-6 absolute z-10">na frente</div>
+		<div class="bg-red-600 h-20 w-20 p-6 absolute m-7">atrás</div>
+	</div>
+
+	<br/><br/><br/><br/><br/><br/>
+
+	<div class="container relative">
+		<div class="bg-blue-300 h-20 w-20 p-6 absolute z-20">na frente</div>
+		<div class="bg-blue-600 h-20 w-20 p-6 absolute z-10 m-6">atrás</div>
+		<div class="bg-blue-900 h-20 w-20 p-6 absolute m-10">atrás</div>
+	</div>
+
+</body>
+</html>
